@@ -4,7 +4,8 @@ document.addEventListener('submit', async function(evt) {
     evt.preventDefault();
     const inputValue = document.querySelector('#input').value
     try {
-        const proxy = 'https://cors-anywhere.herokuapp.com/';
+        //const proxy = 'https://cors-anywhere.herokuapp.com/';
+        const proxy = 'https://api.allorigins.win/get?url=';
         const search = 'https://api.tvmaze.com/search/shows?q='+ inputValue;
         const url = proxy + (search)
         console.log(url)
